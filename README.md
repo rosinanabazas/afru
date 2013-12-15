@@ -1,1 +1,1 @@
-# sitio web para AFRU - Asociación de Funcionarios Registrales del Uruguay.
+# blog de recetas vegetarianas
