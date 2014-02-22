@@ -1,10 +1,10 @@
 
-
-
+body {
+    font-family: 'Ruda', sans-serif;
+}
 
 h1 {
     font-size: 2em;
-    font-family:"Pontano Sans Regular", arial, verdana, sans-serif; 
     color: gray;
     margin-left: 50px;
 }
@@ -12,54 +12,54 @@ h1 {
 li {
     list-style:none;
 }
+.buttons {
+  color:white;
+  background: #4d4948; 
+  margin-right: 10%;
+  padding: 5px;
+  float:right;
+  display: inline;
+}
+/*header*/
 
+.logo {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+/*main content*/
 
 .recipetitle {
     font-size: 1em;
-    font-family:"Pontano Sans Regular", arial, verdana, sans-serif; 
     color: gray;
     padding: 15px;
     float: left;
 }
 
-.buttons {
-		color:white;
-		background: gray; 
-        margin: 12px 12px 12px 12px;
-        padding: 3px 3px 3px 3px;
-        float:right;
-        display: inline;
-}
-
-
 a:hover {
-      color:white;
-      background-color: orange 
-}
-
-
-
-
+  color:white;
+  background-color: orange 
+  }
 
 
 .head-img {
-        background: #ACF53D;
-        width:relative
-        height: 170px;
-        padding: 10px;
-        color: white;   
-        font-size: 1.5em;
-        line-height:4px;
-        border-bottom-style:dotted;
+    background: #e1e40d;
+    width:relative;
+    height: 170px;
+    padding: 10px;
+    color: white;   
+    font-size: 1.5em;
+    line-height:4px;
+    border-bottom-style:dotted;
 }
 
 .container {
-        background-color: #D4F870;
-        width:900px;
-        height: 350px;
-        margin: 70px;
-        padding: 10px;
-        float: left;
+    background-color: #D4F870;
+    width: 80%;
+    height: auto;
+    margin-right: 10%;
+    margin-left: 10%; 
+    padding: 10px;
+    float: left;
 }
 
 .container li{
