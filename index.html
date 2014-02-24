@@ -9,96 +9,79 @@
         <title>:: Casa Veggie ::</title>
         <meta name="description" content="Blog Recetas Vegetarianas Veganas">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Ruda' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <header>
-            <div class="head-img">
-                <img class="logo" src="img/logo.png" alt="Casa Veggie">
-            </div>
-            <nav>
-                <ul>
-                    <li><a class="buttons" href="inicio.html">INICIO</a></li>
-                    <li><a class="buttons" href="recetas.html">RECETAS</a></li>
-                    <li><a class="buttons" href="tips.html">TIPS</a></li>
-                    <li><a class="buttons" href="contacto.html">CONTACTO</a></li>
+            <nav class="wrapper">
+                <a href="/">
+                    <img class="logo" src="img/logo.png" alt="Casa Veggie">
+                </a>
+                <ul class="main-nav">
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="recetas.html">Recetas</a></li>
+                    <li><a href="tips.html">Tips</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>   
-                <ul>
-                    <li>
-                        <a href="https://twitter.com/casaveggie"> 
-                            <img alt="twitter" src="img/tw.png">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/CasaVeggie"> 
-                            <img alt="facebook" src="img/fb.png">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:rosinanabazas@gmail.com"> 
-                            <img alt="Mail" src="img/mail.png">
-                        </a>                   
-                    </li>
+                <ul class="networks">
+                    <li><a href="https://twitter.com/casaveggie"><span>Twitter</span></a></li>
+                    <li><a href="https://www.facebook.com/CasaVeggie"><span>Facebook</span></a></li>
+                    <li><a href="mailto:rosinanabazas@gmail.com"><span>Email</span></a></li>
                 </ul>
             </nav>
         </header>
         
-        <section>
-            <div class="container">
-            <h1>SMOOTHIES</h1>
-                    <ul>
-                        <li>
-                            <a class="recipetitle" href="kale.html"> 
+        <main class="wrapper">
+            <section class="container">
+                <h1>Smoothies</h1>
+                <ul>
+                    <li>
+                        <a class="recipetitle" href="kale.html"> 
                             <img alt="smoothie kale" src="img/smoo1.jpg">
                             <p>Smoothie de kale, kiwi y banana</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="recipetitle" href="frutilla.html"> 
+                        </a>
+                    </li>
+                    <li>
+                        <a class="recipetitle" href="frutilla.html"> 
                             <img alt="smoothie frutilla" src="img/smoo2.jpg">
                             <p>Smoothie de frutilla y moras</p>
-                            </a>
-                        </li>
-                        <li> 
-                            <a class="recipetitle" href="mora.html"> 
+                        </a>
+                    </li>
+                    <li class="last">
+                        <a class="recipetitle" href="mora.html"> 
                             <img alt="smoothie moras" src="img/smoo3.jpg">
                             <p>Smoothie de moras y arándanos</p>
-                            </a>
-                        </li>
-                    </ul>
-            </div>  
-        </section>
-        
-        <section>
-            <div class="container">
-            <h1>SOPAS</h1>
-                    <ul>
-                        <li>
-                            <a class="recipetitle" href="zanahoria.html"> 
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            
+            <section class="container">
+                <h1>SOPAS</h1>
+                <ul>
+                    <li>
+                        <a class="recipetitle" href="zanahoria.html"> 
                             <img alt="sopa zanahoria" src="img/sopa1.jpg">
                             <p>Sopa de zanahoria</p>
-                            </a>
-                        </li>               
-                        <li><a class="recipetitle" href="zapallo.html"> 
+                        </a>
+                    </li>               
+                    <li>
+                        <a class="recipetitle" href="zapallo.html"> 
                             <img alt="sopa zapallo" src="img/sopa2.jpg">
                             <p>Sopa de zapallo y puerro</p>
-                            </a> 
-                        </li>     
-                            <a class="recipetitle" href="tofu.html"> 
+                        </a> 
+                    </li>
+                    <li class="last">     
+                        <a class="recipetitle" href="tofu.html"> 
                             <img alt="sopa tofu" src="img/sopa3.jpg">
                             <p>Sopa con tofu, porotos y espinaca</p>
-                            </a>
-                        </li>
-                    </ul>
-            </div>    
-        </section>
+                        </a>
+                    </li>
+                </ul>    
+            </section>
 
-
-        <section>
-            <div class="container">
+            <section class="container">
                 <h1>POSTRES</h1>
                 <ul>
                     <li>
@@ -113,18 +96,18 @@
                             <p>Whoopie de frutilla</p>
                         </a> 
                     </li>            
-                    <li>
-                        <a class="recipetitle" ref="muffin.html"> 
+                    <li class="last">
+                        <a class="recipetitle" href="muffin.html"> 
                             <img alt="muffin" src="img/postre3.jpg">
                             <p>Muffins de pera y miel</p>
                         </a>
                     </li>
                 </ul>
-            </div>
-        </section>
+            </section>
+        </main>
 
         <footer>         
-           <ul>
+            <ul class="wrapper">
                 <li><a href="inicio.html">Inicio</a></li>
                 <li><a href="recetas.html">Recetas</a></li>
                 <li><a href="tips.html">Tips</a></li>
