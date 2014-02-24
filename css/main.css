@@ -1,119 +1,101 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
 
 body {
-    font-family: 'Ruda', sans-serif;
+  font-family: 'Ruda', sans-serif;
 }
-
 h1 {
-    font-size: 2em;
-    color: gray;
-    margin-left: 50px;
+  font-size: 2em;
+  color: gray;
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  /*border: 5px solid green;*/
+  position: relative;
 }
 
-li {
-    list-style:none;
+/* header */
+
+header {
+  background: #e1e40d;
+  border-bottom: 3px dashed white;
+  padding: 20px 0;
+  margin-bottom: 20px;
 }
-.buttons {
-  color:white;
+header .main-nav {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  /*border: 1px solid red;*/
+}
+header .main-nav li {
+  display: inline-block;
+}
+header .main-nav a {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: white;
   background: #4d4948; 
-  margin-right: 10%;
+  margin-left: 1em;
   padding: 5px;
-  float:right;
-  display: inline;
+  display: block;
 }
-/*header*/
-
-.logo {
-    margin-left: 50px;
-    margin-top: 20px;
-}
-/*main content*/
-
-.recipetitle {
-    font-size: 1em;
-    color: gray;
-    padding: 15px;
-    float: left;
-}
-
-a:hover {
-  color:white;
+header .main-nav a:hover {
   background-color: orange 
-  }
-
-
-.head-img {
-    background: #e1e40d;
-    width:relative;
-    height: 170px;
-    padding: 10px;
-    color: white;   
-    font-size: 1.5em;
-    line-height:4px;
-    border-bottom-style:dotted;
+}
+header .networks {
+  /*border: 1px solid blue;*/
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+header .networks li{
+  display: inline-block;
 }
 
-.container {
-    background-color: #D4F870;
-    width: 80%;
-    height: auto;
-    margin-right: 10%;
-    margin-left: 10%; 
-    padding: 10px;
-    float: left;
+/* main content */
+main .wrapper {
+  background-color: #D4F870;
+}
+main .recipetitle {
+  font-size: 1em;
+  color: gray;
+}
+main .container {
+  width: 100%;
+  clear: both;
+  overflow: auto;
+}
+main .container li {
+  float: left;
+  /*background: red;*/
+  width: 30%;
+  margin-right: 2%;
+  padding: 1%;
+  overflow: hidden;
+}
+main .container li.last {
+  margin-right: 0;
+}
+main .container li img {
+  width: 100%;
+}
+main .container li p {
+  min-height: 40px;
 }
 
-.container li{
-        display: inline;
-}
-
-.container a{
-        width:200px;
-}
-
-
+/* footer */
 
 footer {
-        background: #ACF53D;
-        width:relative;
-        height: 160px;
-        padding: 10px;
-        color: white;
-        font-size: 1em;
-        line-height:4px
-        text-decoration:none;
-        clear: both;
-}
-
-
-
-
-
-/* ===============================
-   Eliminar subrayado en los links
-   ===============================*/
-
-
-a:active {
-text-decoration: none;
-
-
-}
-
-
-a:link {
-text-decoration: none;
-
-
-}
-
-
-a:visited {
-text-decoration: none;
-
-
-}
-
-
-a:hover {
-text-decoration: none;
+  background: #ACF53D;
+  width:relative;
+  height: 160px;
+  padding: 10px;
+  color: white;
+  font-size: 1em;
+  clear: both;
 }
