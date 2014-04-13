@@ -29,8 +29,6 @@ p {
   position: relative;
 }
 
-
-
 /* header */
 header {
   background: #5CBDBD;
@@ -58,14 +56,6 @@ header .main-nav a {
 header .main-nav a:hover {
   background-color: orange;
 }
-header .networks {
-  position: absolute;
-  top: 10px;
-  right: 0;
-}
-header .networks li{
-  display: inline-block;
-}
 
 /* main content */
 
@@ -81,19 +71,19 @@ main .container {
   clear: both;
   overflow: auto;
 }
-main .container li {
+.recipes li {
   float: left;
   width: 30%;
   margin-right: 5%;
   overflow: hidden;
 }
-main .container li.last {
+.recipes li.last {
   margin-right: 0;
 }
-main .container li img {
+.recipes li img {
   width: 100%;
 }
-main .container li p {
+.recipes li p {
   min-height: 40px;
 }
 .container p {
@@ -174,4 +164,31 @@ footer {
   text-align: center;
   border-top: 3px dashed white;
   margin-top: 3em;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 600px) {
+  header{
+    overflow: hidden;
+  }
+  header .main-nav {
+    margin: 2em auto 0 auto;
+    width: 100%;
+    text-align: center;
+    clear: both;
+    display: block;
+    position: static;
+  }
+  .main-nav li a{
+    margin-left: 0;
+    margin-right: 1em;
+  }
+  h1{
+    clear: both;
+    text-align: center;
+  }
+  .recipes li{
+    width: 100%;
+  }
 }
